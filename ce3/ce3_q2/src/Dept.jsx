@@ -39,11 +39,17 @@ function DeptList({depts}) {
     let rows = [];
     for (let i in depts) {
         rows.push(
-            <tr><td>{depts[i].code}</td></tr>
+            <tr key={depts[i].code}>
+                <td>{depts[i].code}</td></tr>
         );
     }
     return (        
-        <div></div> // TODO: fixme
+        <table>
+            <tbody>
+                <tr><th>Index</th><th>Code</th></tr>
+                {rows}
+            </tbody>
+        </table>// TODO: fixme
     )
 }
 

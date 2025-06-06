@@ -131,7 +131,7 @@ function Staff() {
 
 
     useEffect( () => {
-        // TODO: fixme:
+        initStaffs();
     }, []);
 
     return (
